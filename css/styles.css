@@ -132,12 +132,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
-/* #restaurant-container{
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: nowrap;
-	height: 100%;
-} */
+
 #restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
@@ -288,15 +283,32 @@ nav h1 a {
 }
 
 /*  media queries*/
+@media only screen and (max-width: 767px)  {
 
-@media screen and (min-width: 980px) {
-/* #restaurant-list li{
-	width: calc(25% - 30px);
-} */
+	#restaurants-list {
+	    justify-content: space-evenly;
+	}
+	#restaurants-list li {
+    width: 100%;
 }
-@media screen and (max-width: 736px) {
-
 }
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
 
+	#restaurants-list {
+	    justify-content: space-evenly;
+	}
+	#restaurants-list li {
+    width: 35%;
+}
+}
+@media only screen and (min-width: 1024px)  {
+
+	#restaurants-list {
+	    justify-content: space-evenly;
+	}
+	#restaurants-list li {
+    width: 30%;
+		height: auto;
+		padding: 10px 10px;
+}
 }
